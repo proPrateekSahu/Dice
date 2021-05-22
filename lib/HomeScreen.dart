@@ -32,16 +32,20 @@ class _HomeScreenState extends State<HomeScreen> {
                   Expanded(
                     child: Padding(
                       padding: EdgeInsets.all(10),
-                      child: Container(
-                        child: Image.asset('images/dice$leftDiceNumber.png'),
+                      child: GestureDetector(onDoubleTap: roll,
+                        child: Container(
+                          child: Image.asset('images/dice$leftDiceNumber.png'),
+                        ),
                       ),
                     ),
                   ),
                   Expanded(
                     child: Padding(
                       padding: EdgeInsets.all(10),
-                      child: Container(
-                        child: Image.asset('images/dice$rightDiceNumber.png'),
+                      child: GestureDetector(onDoubleTap: roll,
+                        child: Container(
+                          child: Image.asset('images/dice$rightDiceNumber.png'),
+                        ),
                       ),
                     ),
                   ),
